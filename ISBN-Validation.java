@@ -4,13 +4,16 @@ import java.util.Arrays;
 import java.util.Scanner;
 import static lab9.stringvalidation.Validation2.emailCheck;
 
-
+/*
+Prompts for input, then verifies whether the input is a legitimate ISBN number
+according to basic requirements 
+*/
 public class Validation {
 
     public static void main(String[] args) {
         boolean tryAgain = true;
         
-        while (tryAgain == true){           //Allowing program to keep running and check multiple strings
+        while (tryAgain == true){           
 
             String input;    
             Scanner isbnIN = new Scanner(System.in);
@@ -85,9 +88,6 @@ public class Validation {
                 
             }
         }
-//        else {
-//            valid = false;
-//        }
 
         return valid;
     }
